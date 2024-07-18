@@ -1,5 +1,7 @@
 import "./homeFeature.css";
 import mainFeatureCarpenter from "../../assets/mainFeatureCarpenter.jpg"; // Tell webpack this JS file uses this image
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function HomeFeature() {
   return (
@@ -11,10 +13,13 @@ function HomeFeature() {
         </div>
         <div className="featured-content-container">
           <h1>Welcome to Weekend Warrior Workshop</h1>
-          <span>
+          <p>
             Learn new skills and complete projects with expert guidance in no
             time!
-          </span>
+          </p>
+          <Link to="workshop">
+            <Button variant="contained">Get Started</Button>
+          </Link>
         </div>
       </div>
     </div>

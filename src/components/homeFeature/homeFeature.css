@@ -2,6 +2,7 @@
   height: fit-content;
   display: flex;
   justify-content: center;
+  margin: 40px;
 }
 .background-image-container {
   position: relative;
@@ -28,15 +29,30 @@
   object-fit: contain;
 }
 .featured-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
+  margin-inline: 50px;
 }
 .featured-content-container > * {
   color: white;
 }
 .featured-content-container > h1 {
   letter-spacing: -1px;
-  font-size: 35px;
+  margin: 0;
+  font-size: 50px;
   line-break: after-white-space;
   font-weight: bolder;
+}
+.featured-content-container > p {
+  margin: 0px 0px 40px 5px;
+}
+.featured-content-container > button {
+  width: fit-content;
+}
+
+.featured-content-container > a {
+  text-decoration: none;
 }

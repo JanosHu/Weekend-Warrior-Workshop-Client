@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --main-color-200: #fcfaf7;
+  --main-color-100: #e8d9cf;
+  --accent-color-200: #ed6e12;
+  --accent-color-100: #cd5d0d;
+}
+
 body {
   margin: 0;
   font-family: "Be Vietnam Pro";
@@ -10,4 +17,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+button.MuiButtonBase-root {
+  border-radius: 12px;
+  padding-block: 8px;
+}
+button.MuiButton-contained {
+  background-color: var(--accent-color-200);
+}
+button.MuiButton-contained:hover {
+  background-color: var(--accent-color-100);
 }

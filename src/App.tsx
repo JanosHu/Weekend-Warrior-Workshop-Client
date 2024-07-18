@@ -1,9 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Button from "@mui/material/Button";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/navbar";
 import "./App.css";
 import MainLayout from "./layouts/mainLayout/mainLayout";
 import HomePage from "./pages/homePage/homePage";
