@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  margin-inline: 50px;
 }
 .navbar-logo-text {
   margin: 0;
