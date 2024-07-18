@@ -14,6 +14,8 @@
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .background-gradient {
   position: absolute;
@@ -26,6 +28,9 @@
 }
 .image-gradient-container > img {
   border-radius: 12px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 .featured-content-container {
@@ -52,7 +57,36 @@
 .featured-content-container > button {
   width: fit-content;
 }
+.featured-content-container > a > button {
+  width: fit-content;
+  transition: background-color 0.3s;
+  animation: beat 5s infinite;
+}
 
 .featured-content-container > a {
   text-decoration: none;
+}
+
+@keyframes beat {
+  0%,
+  40%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+  50%,
+  80% {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 750px) {
+  .featured-content-container > h1 {
+    font-size: 30px;
+  }
+  .featured-content-container > a > button {
+    font-size: 10px;
+  }
+  .featured-content-container > p {
+    margin: 0px 0px 20px 5px;
+  }
 }
